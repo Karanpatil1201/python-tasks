@@ -1,14 +1,12 @@
 """
-Task 2: Create a Personalized Greeting
+Task 2: Sum of Integers from 1 to 50 Using a Loop
+
 Problem Statement: Write a Python program that:
-1.  Takes a user's first name and last name as input.
-2.  Concatenates the first name and last name into a full name.
-3.  Prints a personalized greeting message using the full name.
+1.   Uses a for loop to iterate over numbers from 1 to 50.
+2.   Calculates the sum of all integers in this range.
+3.   Displays the final sum.
 """
-first_name=str(input("Enter your first name:"))
-last_name=str(input("Enter your last name:"))
-
-full_name=first_name+" "+last_name
-print("Hello,",full_name,"! Welcome to python program.")
-
-
+summ=0
+for i in range(1,51,1):
+    summ=summ+i
+print(f"The sum of integer from 1 to 50 is:{summ}")
